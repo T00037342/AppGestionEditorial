@@ -52,6 +52,14 @@ namespace AppGestionBancaria.Datos
         #endregion
 
         #region "Metodos SobreEscritos"
+        public override string ToString()
+        {
+            return
+            "=================================================" +
+            "\nNumero de articulos:      " + this.capitulo +
+            "\nNumero de Volumen:        " + this.tomos+
+            "\nNumero de Volumen:        " + this.nivel;
+        }
         public override bool Equals(object obj)
         {
             Libros L = (Libros)obj;

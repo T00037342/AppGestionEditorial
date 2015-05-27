@@ -43,6 +43,15 @@ namespace AppGestionBancaria.Datos
         #endregion
 
         #region "Metodos SobreEscritos"
+
+        public override string ToString()
+        {
+            return 
+            "=================================================" +
+            "\nNumero de articulos:      " + this.articulos +
+            "\nNumero de Volumen:        " + this.volumen;
+        }
+
         public override bool Equals(object obj)
         {
             Revistas R = (Revistas)obj;

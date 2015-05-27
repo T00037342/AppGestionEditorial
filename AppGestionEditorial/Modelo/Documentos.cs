@@ -127,7 +127,7 @@ namespace AppGestionBancaria.Datos
         #region "Metodos SobreEscritos"
         public override string ToString()
         {
-            return "Nombre de la Clase" +
+            return "Documentos" +
             "\n=============================================" +
             "\nCodigo Del Libro          " + this.codigo +
             "\nTitulo Del Libro          " + this.titulo +
@@ -139,7 +139,6 @@ namespace AppGestionBancaria.Datos
             "\nNumero De Paginas:        " + this.nPaginas +
             "\nFecha De Edicion:         " + this.fEdicion +
             "\nFecha De Publicacion:     " + this.fPublicacion;
-
         }
 
         public override bool Equals(object obj)
