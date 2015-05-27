@@ -17,7 +17,7 @@ namespace AppGestionEditorial.Datos
         private int nAutores;
         private string[] autores;      
         private int nIdioma;
-        private string[] idioma;
+        private string[] idiomas;
 
         private int nPaginas;
         private string fEdicion;
@@ -117,7 +117,7 @@ namespace AppGestionEditorial.Datos
 
             for (int f = 0; f < this.nIdioma; f++)
             {
-                this.idioma[f] = idioma[f];
+                this.idiomas[f] = idioma[f];
             }
         }
         #endregion
@@ -132,7 +132,7 @@ namespace AppGestionEditorial.Datos
             "\nEditorial Del Libro:      " + this.editorial +
             "\nEdicion Del Libro:        " + this.editorial +
             "\nAutores:                  " + this.autores +
-            "\nIdiomas:                  " + this.idioma +
+            "\nIdiomas:                  " + this.idiomas +
             "\nCategorias:               " + this.categoria +
             "\nNumero De Paginas:        " + this.nPaginas +
             "\nFecha De Edicion:         " + this.fEdicion +
@@ -146,7 +146,7 @@ namespace AppGestionEditorial.Datos
             if ((this.codigo==D.codigo)&&
                 (this.titulo==D.titulo)&&
                 (this.autores == D.autores)&&
-                (this.idioma == D.idioma)&&
+                (this.idiomas == D.idiomas)&&
                 (this.editorial == D.editorial)&&
                 (this.categoria == D.categoria)&&
                 (this.nPaginas == D.nPaginas)&&
