@@ -10,16 +10,9 @@ namespace AppGestionBancaria.Datos
     {
         #region "Atributos"
         private string codigo;
-
         private string titulo;
-
-        
         private string editorial;
-
-        
         private string categoria;
-
-        
 
         private int nAutores;
         private string[] autores;      
