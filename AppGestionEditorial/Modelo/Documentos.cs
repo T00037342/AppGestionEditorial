@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using AppGestionEditorial.Modelo;
 
-namespace AppGestionBancaria.Datos
+namespace AppGestionEditorial.Datos
 {
     public class Documentos
     {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace AppGestionBancaria.Datos
+namespace AppGestionEditorial.Datos
 {
     public class Cientificos : Documentos
     {

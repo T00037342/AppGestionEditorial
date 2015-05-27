@@ -79,6 +79,7 @@
     <Content Include="Web.config" />
     <Content Include="Scripts\jquery-2.1.3.min.map" />
     <Content Include="Web\Site1.Master" />
+    <Content Include="Web\NestedMasterPage1.master" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Modelo\Cientificos.cs" />
@@ -89,6 +90,13 @@
     <Compile Include="Modelo\Libros.cs" />
     <Compile Include="Modelo\Revistas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Web\NestedMasterPage1.master.cs">
+      <DependentUpon>NestedMasterPage1.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Web\NestedMasterPage1.master.designer.cs">
+      <DependentUpon>NestedMasterPage1.master</DependentUpon>
+    </Compile>
     <Compile Include="Web\Site1.Master.cs">
       <DependentUpon>Site1.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
