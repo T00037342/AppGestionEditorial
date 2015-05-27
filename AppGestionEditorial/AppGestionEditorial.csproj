@@ -82,6 +82,7 @@
   <ItemGroup>
     <Compile Include="Modelo\Cientificos.cs" />
     <Compile Include="Modelo\Documentos.cs" />
+    <Compile Include="Modelo\Factura.cs" />
     <Compile Include="Modelo\Formato.cs" />
     <Compile Include="Modelo\IPermisos.cs" />
     <Compile Include="Modelo\Libros.cs" />

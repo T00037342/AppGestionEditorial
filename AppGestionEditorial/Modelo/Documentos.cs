@@ -21,9 +21,7 @@ namespace AppGestionBancaria.Datos
 
         private int nPaginas;
         private string fEdicion;
-        private string fPublicacion;
-
-        
+        private string fPublicacion;      
 
         private static List<Formato> Formu = new List<Formato>();
         #endregion
