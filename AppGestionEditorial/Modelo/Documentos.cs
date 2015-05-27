@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using AppGestionEditorial.Modelo;
 
 namespace AppGestionBancaria.Datos
 {
@@ -9,24 +10,87 @@ namespace AppGestionBancaria.Datos
     {
         #region "Atributos"
         private string codigo;
+
         private string titulo;
-private string editorial;
+
+        
+        private string editorial;
+
+        
         private string categoria;
+
+        
+
         private int nAutores;
-        private string[] autores;
+        private string[] autores;      
         private int nIdioma;
         private string[] idioma;
 
-        
         private int nPaginas;
         private string fEdicion;
         private string fPublicacion;
 
-        //private static List<Formato> = new List<Formato>;
+        
+
+        private static List<Formato> Formu = new List<Formato>();
         #endregion
 
         #region "Propiedades"
-        
+        public string Codigo
+        {
+            get { return codigo; }
+            set { codigo = value; }
+        }
+        public string Titulo
+        {
+            get { return titulo; }
+            set { titulo = value; }
+        }
+        public string Editorial
+        {
+            get { return editorial; }
+            set { editorial = value; }
+        }
+        public string Categoria
+        {
+            get { return categoria; }
+            set { categoria = value; }
+        }
+        public int NAutores
+        {
+            get { return nAutores; }
+            set { nAutores = value; }
+        }
+        public string[] Autores1
+        {
+            get { return autores; }
+            set { autores = value; }
+        }
+        public string[] Autores
+        {
+            get { return autores; }
+            set { autores = value; }
+        }
+        public int NIdioma
+        {
+            get { return nIdioma; }
+            set { nIdioma = value; }
+        }
+        public int NPaginas
+        {
+            get { return nPaginas; }
+            set { nPaginas = value; }
+        }
+        public string FEdicion
+        {
+            get { return fEdicion; }
+            set { fEdicion = value; }
+        }
+        public string FPublicacion
+        {
+            get { return fPublicacion; }
+            set { fPublicacion = value; }
+        }
         #endregion
 
         #region "Costructor"
@@ -68,14 +132,31 @@ private string editorial;
         #endregion
 
         #region "Metodos SobreEscritos"
+        public override string ToString()
+        {
+            return "Nombre de la Clase" +
+            "\n=============================================" +
+            "\nCodigo Del Libro          " + this.codigo +
+            "\nTitulo Del Libro          " + this.titulo +
+            "\nEditorial Del Libro:      " + this.editorial +
+            "\nEdicion Del Libro:        " + this.editorial +
+            "\nAutores:                  " + this.autores +
+            "\nIdiomas:                  " + this.idioma +
+            "\nCategorias:               " + this.categoria +
+            "\nNumero De Paginas:        " + this.nPaginas +
+            "\nFecha De Edicion:         " + this.fEdicion +
+            "\nFecha De Publicacion:     " + this.fPublicacion;
+
+        }
+
         public override bool Equals(object obj)
         {
             Documentos D = (Documentos)obj;
             bool result = false;
             if ((this.codigo==D.codigo)&&
                 (this.titulo==D.titulo)&&
-                (this.nAutores == D.nAutores)&&
-                (this.nIdioma == D.nIdioma)&&
+                (this.autores == D.autores)&&
+                (this.idioma == D.idioma)&&
                 (this.editorial == D.editorial)&&
                 (this.categoria == D.categoria)&&
                 (this.nPaginas == D.nPaginas)&&
